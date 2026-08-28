@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Sepadu - Dusun Semyang, Semparuk, Sambas</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif;}
+        body {line-height: 1.6; color: #333; background: #f0f8f0;}
+        
+        /* Header */
+        header {background: linear-gradient(135deg, #2d5016, #4a7c23); color: white; text-align: center; padding: 50px 20px;}
+        header h1 {font-size: 2.2rem; margin-bottom: 8px;}
+        header p {font-size: 1.1rem; opacity: 0.9;}
+        
+        /* Navigasi */
+        nav {background: #2d5016; padding: 12px; text-align: center; position: sticky; top: 0; z-index: 100;}
+        nav a {color: white; margin: 0 12px; text-decoration: none; font-weight: 500;}
+        nav a:hover {color: #a8e063;}
+        
+        /* Konten */
+        .container {max-width: 1100px; margin: 30px auto; padding: 0 20px;}
+        section {background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);}
+        h2 {color: #2d5016; margin-bottom: 15px; border-bottom: 3px solid #a8e063; padding-bottom: 8px;}
+        
+        /* Foto & Galeri */
+        .foto-utama {width: 100%; max-width: 600px; border-radius: 10px; margin: 15px auto; display: block; box-shadow: 0 4px 12px rgba(0,0,0,0.15);}
+        .galeri {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;}
+        .galeri img {width: 100%; height: 180px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        
+        /* Peta Lokasi */
+        .peta-container {width: 100%; height: 400px; border-radius: 10px; overflow: hidden; margin-top: 15px; border: 3px solid #4a7c23;}
+        iframe {width: 100%; height: 100%; border: none;}
+        
+        /* Data Desa */
+        .data-desa {display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px;}
+        .data-desa p {padding: 8px 0; border-bottom: 1px dashed #ddd;}
+        .data-desa strong {color: #2d5016;}
+        
+        /* Footer */
+        footer {background: #2d5016; color: white; text-align: center; padding: 20px; margin-top: 30px;}
+        
+        /* Responsif HP */
+        @media (max-width: 600px) {
+            .data-desa {grid-template-columns: 1fr;}
+            nav a {display: inline-block; margin: 5px 8px;}
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔹 JUDUL UTAMA -->
+<header>
+    <h1>🌿 Desa Sepadu</h1>
+    <p>Dusun Semayang — Kecamatan Semparuk, Kabupaten Sambas</p>
+</header>
+
+<!-- 🔹 MENU NAVIGASI -->
+<nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#profil">Profil</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#lokasi">Lokasi</a>
+    <a href="#wisata">Wisata</a>
+    <a href="#budaya">Budaya</a>
+</nav>
+
+<div class="container">
+
+<!-- 🔹 BERANDA -->
+<section id="beranda">
+    <h2>🏡 Selamat Datang di Desa Sepadu</h2>
+    <p>Desa Sepadu terletak di Dusun Semayang, Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat. Desa kami memiliki udara yang segar, pemandangan alam yang hijau, serta masyarakat yang ramah, hidup rukun, dan bergotong royong. Terletak di wilayah pesisir utara Sambas, desa kami kaya akan potensi pertanian dan perkebunan.</p>
+    <img src="foto.jpg.desa.jpeg" alt="Pemandangan Desa Sepadu" class="foto-utama">
+    <p style="text-align:center; color:#666; font-style:italic; margin-top:8px;">Keindahan alam Desa Sepadu, Dusun Semayang, Semparuk</p>
+</section>
+
+<!-- 🔹 PROFIL DESA -->
+<section id="profil">
+    <h2>📋 Profil Desa</h2>
+    <div class="data-desa">
+        <p><strong>📍 Provinsi:</strong> Kalimantan Barat</p>
+        <p><strong>🗺️ Kabupaten:</strong> Sambas</p>
+        <p><strong>🏘️ Kecamatan:</strong> Semparuk</p>
+        <p><strong>🌿 Dusun:</strong> Semayang</p>
+        <p><strong>🏡 Nama Desa:</strong> Sepadu</p>
+        <p><strong>👨‍👩‍👧‍👦 Penduduk:</strong> Ramah & Bergotong Royong</p>
+        <p><strong>🌾 Mata Pencaharian:</strong> Pertanian, Perkebunan, Perikanan</p>
+        <p><strong>🌤️ Iklim:</strong> Tropis & Sejuk</p>
+    </div>
+    <p style="margin-top:15px;">Desa Sepadu memiliki tanah yang subur dan lingkungan yang asri. Masyarakat hidup damai dengan menjaga kelestarian alam serta melestarikan budaya leluhur.</p>
+</section>
+
+<!-- 🔹 GALERI FOTO -->
+<section id="galeri">
+    <h2>📸 Galeri Foto Desa</h2>
+    <p>Dokumentasi keindahan alam dan kehidupan masyarakat Desa Sepadu, Dusun Semyaang:</p>
+    <div class="galeri">
+        <img src="foto.jpg1.jpeg" alt="Pemandangan Alam Dusun Semayang">
+        <img src="foto.jpg2.jpeg" alt="Jalan Dusun Semayang">
+        <img src="foto.jpg3.jpeg" alt="Sawah & Kebun Warga">
+        <img src="foto.jpg4.jpeg" alt="Sungai kecil dan Sunset yang Indah">
+    </div>
+    <p style="margin-top:10px; color:#666; font-size:0.95rem;">*Ganti setiap gambar dengan foto asli Desa Sepadu yang kamu miliki!</p>
+</section>
+
+<!-- 🔹 PETA LOKASI -->
+<section id="lokasi">
+    <h2>🗺️ Lokasi Desa</h2>
+    <p>Berikut adalah peta lokasi Desa Sepadu, Dusun Semayang, Kecamatan Semparuk:</p>
+    <div class="peta-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127732.49243446534!2d109.20812645!3d1.350718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fdd4298c7d274d%3A0x3040d7f73c5a0a0!2sSemparuk%2C%20Kabupaten%20Sambas%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1724845000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <p style="margin-top:10px;"><strong>Alamat Lengkap:</strong> Desa Sepadu, Dusun Semayang, Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat</p>
+</section>
+
+<!-- 🔹 WISATA -->
+<section id="wisata">
+    <h2>🏞️ Potensi & Wisata</h2>
+    <ul style="margin:15px 0 15px 25px;">
+        <li>🌾 <strong>Pertanian:</strong> Tanah subur cocok untuk padi dan palawija</li>
+        <li>🌴 <strong>Perkebunan:</strong> Kelapa, sawit, dan buah-buahan tropis</li>
+        <li>🌊 <strong>Aliran Sungai:</strong> Sumber air bersih untuk pertanian dan kehidupan</li>
+        <li>🌲 <strong>Lingkungan Asri:</strong> Udara bersih dan pemandangan hijau menenangkan</li>
+        <li>🏝️ <strong>Dekat Pesisir:</strong> Tidak jauh dari pantai utara Sambas</li>
+    </ul>
+</section>
+
+<!-- 🔹 BUDAYA -->
+<section id="budaya">
+    <h2>🎵 Budaya & Tradisi</h2>
+    <p>Masyarakat Desa Sepadu menjaga warisan budaya leluhur:</p>
+    <ul style="margin:15px 0 15px 25px;">
+        <li>🎶 <strong>Lagu Daerah:</strong> Sambas Mendunie, Alok Galing, dan lagu Melayu lainnya</li>
+        <li>🤝 <strong>Gotong Royong:</strong> Warga saling membantu dalam pekerjaan desa</li>
+        <li>🍽️ <strong>Kuliner Khas:</strong> Bubur pedas, ampiang, dan jajanan tradisional Sambas</li>
+        <li>🕌 <strong>Kehidupan Beragama:</strong> Kerukunan umat beragama terjaga dengan baik</li>
+        <li>🎊 <strong>Adat Istiadat:</strong> Tradisi pernikahan, syukuran, dan hari raya</li>
+    </ul>
+</section>
+
+</div>
+
+<!-- 🔹 BAWAH -->
+<footer>
+    <p>🌿 Website Desa Sepadu &copy; 2026 | Dusun Semayang, Kecamatan Semparuk, Kabupaten Sambas</p>
+</footer>
+
+</body>
+</html>
